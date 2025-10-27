@@ -24,7 +24,6 @@ Además, la interfaz mantiene elementos clave de navegación como la **barra sup
 
 ![Detalle del producto](img/detalle.png)
 
----
 
 ## 🛒 Carrito de Compras
 
@@ -39,7 +38,6 @@ Se maneja la **concurrencia** para garantizar la consistencia de los datos en ca
 
 ![Carrito de compras](img/carrito.png)
 
----
 
 ## 🛍️ Sección de Búsqueda de Productos
 
