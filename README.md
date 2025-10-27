@@ -9,7 +9,7 @@ Documentación visual de la tienda online (Angular + Spring Boot).
 En esta sección se presentan los productos destacados junto con dos sliders totalmente configurables desde el panel de administración.  
 El buscador principal permite filtrar los productos por **nombre, categoría, subcategoría, características, marcas** y otros criterios, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.  
 
-![Página de inicio](img/home.png)
+![Página de inicio](Tu_tienda_online_doc/blob/main/img/home.png)
 
 ---
 
