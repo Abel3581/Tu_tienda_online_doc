@@ -34,8 +34,7 @@ La **dirección de envío** se obtiene automáticamente según la ubicación con
 El sistema valida además un **importe mínimo de compra** que debe alcanzarse para habilitar la opción de finalizar el pedido.  
 Se maneja la **concurrencia** para garantizar la consistencia de los datos en caso de múltiples usuarios realizando operaciones simultáneas, asegurando que los precios y cantidades se mantengan actualizados correctamente.  
 
-![Carrito de compras](img/carrito.png)
-
+![Carrito de compras](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/carrito.png)
 
 ## 🛍️ Sección de Búsqueda de Productos
 
