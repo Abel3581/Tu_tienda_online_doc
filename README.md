@@ -9,7 +9,7 @@ Documentación visual de la tienda online (Angular + Spring Boot).
 En esta sección se presentan los productos destacados junto con dos sliders totalmente configurables desde el panel de administración.  
 El buscador principal permite filtrar los productos por **nombre, categoría, subcategoría, características, marcas** y otros criterios, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.  
 
-![Página de inicio](img/home.png)
+![Página de inicio](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580413/home_ojsacs.png)
 
 ---
 
@@ -23,7 +23,7 @@ Debajo, se presentan los **productos relacionados**, que se actualizan dinámica
 
 Además, la interfaz mantiene elementos clave de navegación como la **barra superior con el buscador**, las **opciones de cuenta** y el **acceso rápido al carrito**, brindando una experiencia de usuario coherente e intuitiva en todo el sitio.  
 
-![Detalle del producto](img/detalle.png)
+![Detalle del producto](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580886/detalle_dn6fcb.png)
 
 ---
 
