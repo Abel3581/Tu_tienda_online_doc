@@ -2,7 +2,6 @@
 
 Documentación visual de la tienda online (Angular + Spring Boot).
 
----
 
 ## 🏠 Inicio
 
@@ -10,8 +9,6 @@ En esta sección se presentan los productos destacados junto con dos sliders tot
 El buscador principal permite filtrar los productos por **nombre, categoría, subcategoría, características, marcas** y otros criterios, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.  
 
 ![Página de inicio](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580413/home_ojsacs.png)
-
----
 
 ## 🧾 Detalle del Producto
 
@@ -25,8 +22,6 @@ Además, la interfaz mantiene elementos clave de navegación como la **barra sup
 
 ![Detalle del producto](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580886/detalle_dn6fcb.png)
 
----
-
 ## 🛒 Carrito de Compras
 
 En esta sección se listan todos los productos seleccionados por el usuario, mostrando su **imagen, nombre, precio actual, precio anterior en caso de descuento** y controles para **modificar la cantidad o eliminar artículos**.  
@@ -38,7 +33,7 @@ La **dirección de envío** se obtiene automáticamente según la ubicación con
 El sistema valida además un **importe mínimo de compra** que debe alcanzarse para habilitar la opción de finalizar el pedido.  
 Se maneja la **concurrencia** para garantizar la consistencia de los datos en caso de múltiples usuarios realizando operaciones simultáneas, asegurando que los precios y cantidades se mantengan actualizados correctamente.  
 
-![Carrito de compras](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/carrito.png)
+![Carrito de compras](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761582812/carrito_ea5t0d.png)
 
 ## 🛍️ Sección de Búsqueda de Productos
 
@@ -47,4 +42,4 @@ En la columna izquierda se listan las **coincidencias por marcas, categorías** 
 
 Además, se incluye un **menú desplegable** que permite ordenar los productos por **precio** (mayor a menor o menor a mayor) y alfabéticamente (**de la A a la Z**).  
 
-![Filtro](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/busqueda.png)
+![Filtro](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761582932/busqueda-productos_vvvcpp.png)
