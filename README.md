@@ -90,3 +90,17 @@ Notificación interna a la aplicación (por ejemplo, para panel del vendedor o d
 
 ![Finalizacion de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761585397/finalizar-compra_ethaym.png)
 
+## ✅ Modal Crear compra
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png)
+
+---
+
+## ✅ Respuesta compra
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/compra-exito_q3i0br.png)
+
+
+---
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png)
