@@ -10,7 +10,7 @@ En esta sección se presentan los productos destacados junto con dos sliders tot
 El buscador principal permite filtrar los productos por **nombre, categoría, subcategoría, características, marcas** y otros criterios, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.  
 
 ![Página de inicio](img/home.png)
-
+<img src="img/home.png" alt="Home">
 ---
 
 ## 🧾 Detalle del Producto
