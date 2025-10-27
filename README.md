@@ -21,7 +21,7 @@ Debajo, se presentan los **productos relacionados**, que se actualizan dinámica
 
 Además, la interfaz mantiene elementos clave de navegación como la **barra superior con el buscador**, las **opciones de cuenta** y el **acceso rápido al carrito**, brindando una experiencia de usuario coherente e intuitiva en todo el sitio.  
 
-![Detalle del producto](https://github.com/Abel3581/Tu_tienda_online_doc/blob/ce5bfae2a2a90594c95b43526273dc7cb5c8dd6f/img/detalle.png)
+![Detalle del producto](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/detalle.png)
 
 ## 🛒 Carrito de Compras
 
