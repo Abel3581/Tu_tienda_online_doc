@@ -44,7 +44,7 @@ La **dirección de envío** se obtiene automáticamente según la ubicación con
 El sistema valida además un **importe mínimo de compra** que debe alcanzarse para habilitar la opción de finalizar el pedido.  
 Se maneja la **concurrencia** para garantizar la consistencia de los datos en caso de múltiples usuarios realizando operaciones simultáneas, asegurando que los precios y cantidades se mantengan actualizados correctamente.
 
-![Carrito de compras](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761582812/carrito_ea5t0d.png)
+![Carrito de compras](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761606062/carrito-compras_tutk7f.png)
 
 ## 🛒 Vista de Checkout / Carrito de Compras
 
