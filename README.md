@@ -2,6 +2,8 @@
 
 Documentación visual de la tienda online (Angular + Spring Boot).
 
+# 🙍‍♂️ Rol Cliente
+
 ## 🏠 Inicio
 
 En esta sección se presentan los productos destacados junto con dos sliders totalmente configurables desde el panel de administración.  
@@ -104,3 +106,138 @@ Notificación interna a la aplicación (por ejemplo, para panel del vendedor o d
 ---
 
 ![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png)
+
+
+
+# 🙍‍♂️ Rol Administrador
+
+## 📊 Vista Dashboard
+
+Funcionalidades principales:
+
+📦 Visualización del total de productos registrados en la tienda.
+
+💰 Consulta de las ventas del día y el total acumulado de ventas globales.
+
+🖼️ Posibilidad de agregar o modificar la imagen de la marca que se muestra en la aplicación.
+
+🗓️ Registro y visualización de la fecha de inicio de actividades del comercio o empresa.
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761595326/dashboard_d2oves.png)
+
+## 👥 Vista de Clientes
+
+En esta sección se listan todos los clientes registrados en el eCommerce.
+
+📄 Los resultados se muestran mediante paginación, permitiendo una navegación ordenada entre los registros.
+
+🔍 Incluye un filtro de búsqueda que facilita encontrar clientes por nombre, correo u otros criterios relevantes
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761596604/usuarios_r6eufh.png)
+
+🛍️ Vista de Listar Productos Comunes
+
+En esta sección se gestionan los productos disponibles en el eCommerce.
+
+📦 Permite listar todos los productos registrados en el sistema.
+
+✏️ Opción para actualizar información de cada producto.
+
+🚫 Posibilidad de desactivar productos temporalmente sin eliminarlos.
+
+📄 Incluye paginación para una navegación ordenada.
+
+🔍 Dispone de un filtro de búsqueda para encontrar productos fácilmente.
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597648/listar-productos-comunes_t8tyaz.png)
+
+
+🛍️ Vista de Creación de Productos Comunes
+
+En esta sección se pueden crear nuevos productos ingresando toda la información necesaria desde un formulario intuitivo.
+
+Características principales:
+
+📝 Permite registrar productos normales seleccionando sus datos correspondientes (nombre, categoría, precio, descripción, etc.).
+
+🏷️ Si se marca la opción “En promoción”, el producto mostrará un badge promocional y el sistema calculará automáticamente el porcentaje de descuento.
+
+💥 En caso de seleccionar “En oferta” o “Ofertas semanales”, se asigna el badge de oferta y también se calcula automáticamente el porcentaje de descuento.
+
+🖼️ Es posible agregar hasta tres imágenes por producto, eligiendo cuál será la imagen principal que se mostrará en la tienda.
+
+⚙️ Todo el proceso sigue instrucciones claras para garantizar la correcta carga del producto.
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597960/crear-producto-normal_jgsvwl.png)
+
+
+
+
+
+
+
+
+
+
+<!-- 
+🧱 Arquitectura del Proyecto
+
+El backend está implementado siguiendo una arquitectura en capas (Layered Architecture), una práctica estándar en el desarrollo empresarial con Spring Boot.
+Esta estructura organiza el código de manera clara, promoviendo la separación de responsabilidades, la mantenibilidad y la escalabilidad.
+
+🔹 Capas principales:
+
+Controller (Web Layer): expone los endpoints REST y gestiona las solicitudes HTTP.
+
+Service (Business Layer): contiene la lógica de negocio y las reglas de aplicación.
+
+Repository (Data Access Layer): se encarga de la comunicación con la base de datos utilizando Spring Data JPA.
+
+Model / Entity Layer: define las entidades, DTOs y modelos de datos.
+
+📌 Esta organización se basa en el patrón MVC extendido (Model–View–Controller), garantizando un flujo claro desde la capa de presentación hasta la persistencia de datos.
+
+🟦 Frontend – Angular
+
+El frontend se desarrolla bajo una arquitectura modular basada en features (Feature-Based Modular Architecture), complementada con principios de Clean Architecture y el patrón Core–Shared–Feature.
+Esta estructura está pensada para proyectos escalables y de fácil mantenimiento.
+
+
+```text
+src/
+ ├── app/
+ │    ├── core/                  # Servicios singleton, interceptores, guards, modelos globales
+ │    │    ├── services/
+ │    │    ├── guards/
+ │    │    ├── interceptors/
+ │    │    ├── models/
+ │    │    └── core.module.ts
+ │    │
+ │    ├── shared/                # Componentes, pipes, directivas reutilizables
+ │    │    ├── components/
+ │    │    ├── pipes/
+ │    │    ├── directives/
+ │    │    └── shared.module.ts
+ │    │
+ │    ├── features/              # Módulos principales divididos por función/feature
+ │    │    ├── auth/             # Login, registro, recuperación de contraseña
+ │    │    │     ├── components/
+ │    │    │     ├── services/
+ │    │    │     └── auth.module.ts
+ │    │    │
+ │    │    ├── admin/            # Dashboard, gestión de productos, usuarios, pedidos (solo admin)
+ │    │    │     ├── components/
+ │    │    │     ├── services/
+ │    │    │     └── admin.module.ts
+ │    │    │
+ │    │    ├── cliente/          # Catálogo, carrito, perfil, historial de pedidos
+ │    │    │     ├── components/
+ │    │    │     ├── services/
+ │    │    │     └── cliente.module.ts
+ │    │    │
+ │    │    ├── shared-features/  # Funcionalidades compartidas como catálogo de productos
+ │    │
+ │    ├── app-routing.module.ts # Rutas principales con lazy loading por módulo
+ │    └── app.component.ts
+ │
+ └── assets/                     # Imágenes, estilos globales, fuentes -->
