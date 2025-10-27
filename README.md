@@ -135,7 +135,7 @@ En esta sección se listan todos los clientes registrados en el eCommerce.
 
 ![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761596604/usuarios_r6eufh.png)
 
-🛍️ Vista de Listar Productos Comunes
+## 🛍️ Vista de Listar Productos Comunes
 
 En esta sección se gestionan los productos disponibles en el eCommerce.
 
@@ -152,7 +152,7 @@ En esta sección se gestionan los productos disponibles en el eCommerce.
 ![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597648/listar-productos-comunes_t8tyaz.png)
 
 
-🛍️ Vista de Creación de Productos Comunes
+## 🛍️ Vista de Creación de Productos Comunes
 
 En esta sección se pueden crear nuevos productos ingresando toda la información necesaria desde un formulario intuitivo.
 
