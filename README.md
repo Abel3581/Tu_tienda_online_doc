@@ -9,9 +9,13 @@ Documentación visual de la tienda online (Angular + Spring Boot).
 En esta sección se presentan los productos destacados junto con dos sliders totalmente configurables desde el panel de administración.  
 El buscador principal permite filtrar los productos por **nombre, categoría, subcategoría, características, marcas** y otros criterios, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.  
 
+<<<<<<< HEAD
 ![Página de inicio](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580413/home_ojsacs.png)
 
 ---
+=======
+![Página de inicio](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/home.png)
+>>>>>>> 9cec9d981755155486cace3273331ef4b0c9a446
 
 ## 🧾 Detalle del Producto
 
@@ -23,14 +27,18 @@ Debajo, se presentan los **productos relacionados**, que se actualizan dinámica
 
 Además, la interfaz mantiene elementos clave de navegación como la **barra superior con el buscador**, las **opciones de cuenta** y el **acceso rápido al carrito**, brindando una experiencia de usuario coherente e intuitiva en todo el sitio.  
 
+<<<<<<< HEAD
 ![Detalle del producto](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580886/detalle_dn6fcb.png)
 
 ---
+=======
+![Detalle del producto](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/detalle.png)
+>>>>>>> 9cec9d981755155486cace3273331ef4b0c9a446
 
 ## 🛒 Carrito de Compras
 
 En esta sección se listan todos los productos seleccionados por el usuario, mostrando su **imagen, nombre, precio actual, precio anterior en caso de descuento** y controles para **modificar la cantidad o eliminar artículos**.  
-El carrito realiza una **validación dinámica del stock disponible** para evitar agregar productos que superen la cantidad permitida.  
+E carrito realiza una **validación dinámica del stock disponible** para evitar agregar productos que superen la cantidad permitida.  
 
 También se muestra el **total de la compra** actualizado en tiempo real y un botón para continuar con el proceso de pago.  
 La **dirección de envío** se obtiene automáticamente según la ubicación configurada por el usuario, permitiendo calcular costos de entrega antes de confirmar la compra.  
@@ -38,9 +46,7 @@ La **dirección de envío** se obtiene automáticamente según la ubicación con
 El sistema valida además un **importe mínimo de compra** que debe alcanzarse para habilitar la opción de finalizar el pedido.  
 Se maneja la **concurrencia** para garantizar la consistencia de los datos en caso de múltiples usuarios realizando operaciones simultáneas, asegurando que los precios y cantidades se mantengan actualizados correctamente.  
 
-![Carrito de compras](img/carrito.png)
-
----
+![Carrito de compras](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/carrito.png)
 
 ## 🛍️ Sección de Búsqueda de Productos
 
@@ -49,4 +55,4 @@ En la columna izquierda se listan las **coincidencias por marcas, categorías** 
 
 Además, se incluye un **menú desplegable** que permite ordenar los productos por **precio** (mayor a menor o menor a mayor) y alfabéticamente (**de la A a la Z**).  
 
-![Filtro](img/busqueda.png)
+![Filtro](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/busqueda.png)
