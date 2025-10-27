@@ -43,4 +43,4 @@ En la columna izquierda se listan las **coincidencias por marcas, categorías** 
 
 Además, se incluye un **menú desplegable** que permite ordenar los productos por **precio** (mayor a menor o menor a mayor) y alfabéticamente (**de la A a la Z**).  
 
-![Filtro](img/busqueda.png)
+![Filtro](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/busqueda.png)
