@@ -171,14 +171,51 @@ Características principales:
 ![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597960/crear-producto-normal_jgsvwl.png)
 
 
+## 🛍️ Vista de Listar de Productos destacados q se muestran en inicio
 
+En esta sección se gestionan los productos de la vista home en el eCommerce.
 
+📦 Permite listar todos los productos destacados del sistema 32 por seccion .
 
+✏️ Opción para actualizar información de cada producto, si en la columna seccion se elige normal se quita de destacados.
 
+🚫 Posibilidad de desactivar productos temporalmente sin eliminarlos.
 
+📄 Incluye paginación para una navegación ordenada.
 
+🔍 Dispone de un filtro de búsqueda para encontrar productos fácilmente.
 
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761598805/listar-productos-destacados_hph5dz.png)
 
+## 🌟 Vista de Creación de Productos Destacados
+
+En esta sección se pueden crear productos destacados completando un formulario intuitivo con toda la información necesaria.
+Estos productos se muestran en la página de inicio del cliente (Home), pudiendo crear hasta 32 productos destacados por sección.
+
+Características principales:
+
+📝 Permite registrar productos destacados ingresando sus datos principales como nombre, categoría, precio y descripción.
+
+🏷️ Al marcar la opción “En promoción”, el producto mostrará un badge promocional y el sistema calculará automáticamente el porcentaje de descuento.
+
+💥 Si se selecciona “En oferta” o “Ofertas semanales”, se asignará el badge de oferta, junto con el cálculo automático del porcentaje de descuento.
+
+🖼️ Posibilidad de agregar hasta tres imágenes por producto, con la opción de definir cuál será la imagen principal visible en la tienda.
+
+⚙️ El proceso cuenta con instrucciones guiadas para asegurar la carga correcta de cada producto.
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761604291/crear-producto-destacado_cyt5fe.png)
+
+## 📦 Instrucciones para la Carga Masiva de Productos
+
+Esta sección permite importar múltiples productos de forma simultánea mediante un archivo .csv y un .zip con las imágenes correspondientes.
+Seguí estos pasos cuidadosamente para garantizar una carga exitosa.
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761604742/inst-carga-masiva_v7hqmz.png)
+
+## 📦 Carga Masiva de Productos
+
+![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761605460/carga-masiva_bcd23e.png)
 <!-- 
 🧱 Arquitectura del Proyecto
 
