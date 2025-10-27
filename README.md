@@ -21,13 +21,12 @@ Debajo, se presentan los **productos relacionados**, que se actualizan dinámica
 
 Además, la interfaz mantiene elementos clave de navegación como la **barra superior con el buscador**, las **opciones de cuenta** y el **acceso rápido al carrito**, brindando una experiencia de usuario coherente e intuitiva en todo el sitio.  
 
-![Detalle del producto](img/detalle.png)
-
+![Detalle del producto](https://raw.githubusercontent.com/Abel3581/Tu_tienda_online_doc/refs/heads/main/img/detalle.png)
 
 ## 🛒 Carrito de Compras
 
 En esta sección se listan todos los productos seleccionados por el usuario, mostrando su **imagen, nombre, precio actual, precio anterior en caso de descuento** y controles para **modificar la cantidad o eliminar artículos**.  
-El carrito realiza una **validación dinámica del stock disponible** para evitar agregar productos que superen la cantidad permitida.  
+E carrito realiza una **validación dinámica del stock disponible** para evitar agregar productos que superen la cantidad permitida.  
 
 También se muestra el **total de la compra** actualizado en tiempo real y un botón para continuar con el proceso de pago.  
 La **dirección de envío** se obtiene automáticamente según la ubicación configurada por el usuario, permitiendo calcular costos de entrega antes de confirmar la compra.  
