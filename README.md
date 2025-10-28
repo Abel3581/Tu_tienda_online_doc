@@ -27,6 +27,7 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🧾 Gestión de Pedidos](#-gestión-de-pedidos)
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
+  - [⚙️ Características de Productos](#-características)
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
 - [👨‍💻 Autor](#-autor)
 
@@ -187,6 +188,27 @@ Si se desactiva una categoría, también se **desactivan todos sus productos**.
 Incluye buscador y opción para crear nuevas categorías.
 
 ![Categorías](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761610627/categorias_w7hjy0.png)
+
+---
+
+### ⚙️ Características de Productos
+
+Esta sección permite gestionar las **características** de los productos que se muestran en el **detalle** de cada artículo.
+Cada característica se puede crear, editar o eliminar, y está asociada a una o varias categorías.
+
+✨ Funcionalidades principales
+
+- 🆕 Crear nuevas características por categoría (ejemplo: Marca, Peso, Talle, Gramos, Kilos, Tamaño, Color, etc.).
+
+- ✏️ Editar el nombre o la categoría asignada a una característica existente.
+
+- 🗑️ Eliminar características que ya no estén en uso.
+
+- 🔍 Visualizar características existentes con su ID, nombre y categoría asociada.
+
+- 📦 Las características se muestran dinámicamente al crear productos según la categoría seleccionada.
+
+![Categorías](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761616858/caracteristicas_h0dr25.png)
 
 ---
 
