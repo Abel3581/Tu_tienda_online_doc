@@ -261,7 +261,7 @@ Las subcategorías se pueden crear, editar o eliminar, y están vinculadas a una
 
 ---
 
-🖼️ Slider Principal de la Página de Inicio
+### Slider Principal de la Página de Inicio
 
 Esta sección permite administrar las imágenes de los sliders principales que se muestra en la página de inicio del ecommerce.
 Cada slider puede contener hasta 8 imágenes, que se pueden subir, listar o eliminar según se requiera.
