@@ -28,7 +28,7 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
   - [Características de Productos](#características-de-productos)
-  - [🗂️ Subcategorías de Productos](#subcategorías-de-productos)
+  - [Subcategorías de Productos](#subcategorías-de-productos)
 
 
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
@@ -236,7 +236,7 @@ Cada característica se puede crear, editar o eliminar, y está asociada a una o
 
 ---
 
-### 🗂️ Subcategorías de Productos
+### Subcategorías de Productos
 
 Esta sección permite crear y listar subcategorías asociadas a las categorías existentes en el ecommerce.
 Las subcategorías se pueden crear, editar o eliminar, y están vinculadas a una categoría principal.
