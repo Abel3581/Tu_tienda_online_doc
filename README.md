@@ -14,6 +14,8 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [👤 Mi Cuenta](#-mi-cuenta)
   - [👤 Perfil](#-perfil)
   - [🚚 Opciones de Entrega](#-opciones-de-entrega)
+  - [🧾 mis Pedidos](#-mis-pedidos)
+  - [📦 Detalles del Pedido](#-detalles-del-pedido)
   - [🛒 Carrito de Compras](#-carrito-de-compras)
   - [💳 Checkout](#-checkout)
   - [✅ Confirmación de Pago y Creación del Pedido](#-confirmación-de-pago-y-creación-del-pedido)
@@ -92,9 +94,9 @@ Desde este panel podés consultar y modificar toda la información de tu cuenta 
 Desde esta sección puedes crear y seleccionar tu dirección de envío de manera sencilla.
 Tienes dos opciones disponibles:
 
-📍 Usar la API de Google Maps para establecer tu ubicación directamente en el mapa.
+- 📍 Usar la API de Google Maps para establecer tu ubicación directamente en el mapa.
 
-✏️ Ingresarla manualmente si prefieres hacerlo de forma tradicional.
+- ✏️ Ingresarla manualmente si prefieres hacerlo de forma tradicional.
 
 Esta será la dirección donde se entregarán tus pedidos.
 
@@ -103,6 +105,39 @@ Esta será la dirección donde se entregarán tus pedidos.
 ---
 
 ![Manual](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761667736/zona-envio-2_mpyhmv.png)
+
+---
+
+### 🧾 Mis Pedidos
+
+En esta vista, el usuario puede consultar el historial completo de pedidos realizados desde su cuenta.
+Cada pedido muestra información detallada como la fecha de compra, el total, los productos adquiridos y el estado actual del pedido.
+Además, se adapta perfectamente a dispositivos móviles, garantizando una experiencia fluida y responsive.
+
+- 📸 Vista general de pedidos:
+Permite acceder fácilmente al detalle de cada compra mediante el botón "Ver detalles del pedido".
+También incluye una estructura ordenada para visualizar los artículos, precios y estado de entrega.
+
+![Carrito](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761668702/Pedidos_ei3xzz.png)
+
+---
+
+### 📦 Detalles del Pedido
+Esta sección muestra la información completa del pedido seleccionado, incluyendo:
+
+- 📍 Dirección de envío
+
+- 💳 Método de pago utilizado
+
+- 💰 Resumen del pedido (subtotal, descuentos, costos de envío y total)
+
+- 🚚 Estado del pedido con línea de progreso visual
+
+- 🧾 Listado detallado de los productos comprados, cantidades y precios unitarios
+
+La interfaz permite al usuario seguir el estado de su compra en tiempo real y descargar el comprobante una vez que el pedido está en proceso o completado.
+
+![Carrito](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761668702/Pedidos-2_u4eax0.png)
 
 ---
 
