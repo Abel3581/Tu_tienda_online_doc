@@ -11,6 +11,9 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🏠 Inicio](#-inicio)
   - [🧾 Detalle del Producto](#-detalle-del-producto)
   - [🔎 Búsqueda de Productos](#-búsqueda-de-productos)
+  - [👤 Mi Cuenta](#-mi-cuenta)
+  - [👤 Perfil](#-perfil)
+  - [🚚 Opciones de Entrega](#-opciones-de-entrega)
   - [🛒 Carrito de Compras](#-carrito-de-compras)
   - [💳 Checkout](#-checkout)
   - [✅ Confirmación de Pago y Creación del Pedido](#-confirmación-de-pago-y-creación-del-pedido)
@@ -65,6 +68,41 @@ Listado filtrado según la búsqueda del usuario.
 Incluye **filtros por marca, categoría y promociones**, además de ordenamiento por precio o nombre.
 
 ![Búsqueda](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761582932/busqueda-productos_vvvcpp.png)
+
+---
+
+### 👤 Mi Cuenta
+
+Desde este panel podés consultar y modificar toda la información de tu cuenta personal, administrar tus opciones de entrega y revisar el historial de tus pedidos realizados dentro del eCommerce.
+
+![Búsqueda](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761666610/micuenta_pmkxtv.png)
+
+---
+
+### 👤 Perfil
+
+- Aqui puedes actualizar los datos del cliente.
+
+![Búsqueda](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761667362/miperfil_wftayc.png)
+
+---
+
+### 🚚 Opciones de Entrega
+
+Desde esta sección puedes crear y seleccionar tu dirección de envío de manera sencilla.
+Tienes dos opciones disponibles:
+
+📍 Usar la API de Google Maps para establecer tu ubicación directamente en el mapa.
+
+✏️ Ingresarla manualmente si prefieres hacerlo de forma tradicional.
+
+Esta será la dirección donde se entregarán tus pedidos.
+
+![Google](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761667735/zona-envio-1_m3eqpj.png)
+
+---
+
+![Manual](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761667736/zona-envio-2_mpyhmv.png)
 
 ---
 
