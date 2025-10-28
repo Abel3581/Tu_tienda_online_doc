@@ -27,7 +27,7 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🧾 Gestión de Pedidos](#-gestión-de-pedidos)
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
-  - [⚙️ Características de Productos](#-características)
+- [⚙️ Características de Productos](#-características-de-productos)
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
 - [👨‍💻 Autor](#-autor)
 
@@ -36,7 +36,8 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
 ## 🙍‍♂️ Rol Cliente
 
 ### 🏠 Inicio
-En esta sección se presentan los **productos destacados** junto con dos *sliders* configurables desde el panel de administración.  
+
+En esta sección se presentan los **productos destacados** junto con dos _sliders_ configurables desde el panel de administración.  
 El **buscador principal** permite filtrar productos por **nombre, categoría, subcategoría, características o marca**, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.
 
 ![Inicio](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580413/home_ojsacs.png)
@@ -44,6 +45,7 @@ El **buscador principal** permite filtrar productos por **nombre, categoría, su
 ---
 
 ### 🧾 Detalle del Producto
+
 Muestra toda la información del producto: **imagen, nombre, categoría, peso, precio y características**.  
 Si tiene descuento, se muestra el **precio original tachado** y el **porcentaje de ahorro**.  
 Incluye botón para **agregar al carrito**, calcular el **costo de envío** y ver **productos relacionados**.
@@ -53,6 +55,7 @@ Incluye botón para **agregar al carrito**, calcular el **costo de envío** y ve
 ---
 
 ### 🔎 Búsqueda de Productos
+
 Listado filtrado según la búsqueda del usuario.  
 Incluye **filtros por marca, categoría y promociones**, además de ordenamiento por precio o nombre.
 
@@ -61,6 +64,7 @@ Incluye **filtros por marca, categoría y promociones**, además de ordenamiento
 ---
 
 ### 🛒 Carrito de Compras
+
 Muestra los productos seleccionados con control de cantidad, **validación de stock** y **actualización en tiempo real** del total.  
 Incluye un **importe mínimo requerido** antes de finalizar la compra y manejo de **concurrencia** entre usuarios.
 
@@ -69,29 +73,34 @@ Incluye un **importe mínimo requerido** antes de finalizar la compra y manejo d
 ---
 
 ### 💳 Checkout
+
 Permite revisar, modificar y confirmar los productos antes de pagar.  
 Cuenta con:
-- Subtotales, descuentos y totales automáticos.  
-- Botones de modificación (+ / -).  
-- Validación del stock.  
-- Políticas de reemplazo por falta de productos.  
+
+- Subtotales, descuentos y totales automáticos.
+- Botones de modificación (+ / -).
+- Validación del stock.
+- Políticas de reemplazo por falta de productos.
 
 ![Checkout](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761584331/checkout_bf25ju.png)
 
 ---
 
 ### ✅ Confirmación de Pago y Creación del Pedido
+
 Flujo automatizado con **Mercado Pago** y actualización por **Webhook**:
-1. Se recibe el webhook de Mercado Pago.  
-2. Se valida el estado del pago.  
-3. Se actualiza el stock.  
-4. Se genera el pedido y se envía correo de confirmación.  
+
+1. Se recibe el webhook de Mercado Pago.
+2. Se valida el estado del pago.
+3. Se actualiza el stock.
+4. Se genera el pedido y se envía correo de confirmación.
 
 ![Confirmación](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761585397/finalizar-compra_ethaym.png)
 
 ---
 
 ### 💰 Modal y Respuesta de Compra
+
 Visualización del proceso de pago y respuesta de compra exitosa.
 
 ![Modal](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png)
@@ -103,6 +112,7 @@ Visualización del proceso de pago y respuesta de compra exitosa.
 ## ⚙️ Rol Administrador
 
 ### 📊 Dashboard
+
 Visualiza métricas del ecommerce: productos registrados, ventas del día y globales.  
 Permite configurar imagen de marca y fecha de inicio del comercio.
 
@@ -111,6 +121,7 @@ Permite configurar imagen de marca y fecha de inicio del comercio.
 ---
 
 ### 👥 Gestión de Clientes
+
 Listado de clientes con **buscador avanzado** y **paginación**.
 
 ![Clientes](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761596604/usuarios_r6eufh.png)
@@ -118,6 +129,7 @@ Listado de clientes con **buscador avanzado** y **paginación**.
 ---
 
 ### 🛍️ Productos Comunes
+
 Permite **listar, editar, crear y desactivar productos**.  
 Incluye carga de hasta 3 imágenes, cálculo automático de descuentos y etiquetado de ofertas.
 
@@ -126,6 +138,7 @@ Incluye carga de hasta 3 imágenes, cálculo automático de descuentos y etiquet
 ---
 
 ### 🌟 Productos Destacados
+
 Gestiona los productos visibles en la **página principal**.  
 Permite activar, editar o eliminar artículos destacados.
 
@@ -134,6 +147,7 @@ Permite activar, editar o eliminar artículos destacados.
 ---
 
 ### 📦 Carga Masiva de Productos
+
 Permite importar productos mediante **archivos .csv** e imágenes **.zip**, optimizando la gestión masiva del catálogo.
 
 ![Carga masiva](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761605460/carga-masiva_bcd23e.png)
@@ -141,6 +155,7 @@ Permite importar productos mediante **archivos .csv** e imágenes **.zip**, opti
 ---
 
 ### 🚚 Logística – Métodos de Envío
+
 Panel para administrar los métodos de envío: propio o tercerizado.  
 Permite modificar **plazos, disponibilidad y costos**.
 
@@ -149,6 +164,7 @@ Permite modificar **plazos, disponibilidad y costos**.
 ---
 
 ### 💰 Compra Mínima del Carrito
+
 Define el **monto mínimo requerido** para finalizar una compra, garantizando un valor base en el carrito.
 
 ![Compra mínima](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761607877/compra-minima_d87rcu.png)
@@ -156,6 +172,7 @@ Define el **monto mínimo requerido** para finalizar una compra, garantizando un
 ---
 
 ### 🚛 Zonas de Envío
+
 Consulta y gestión de **zonas de envío** con cobertura en **toda Argentina**.  
 Permite actualizar los **costos por región** en tiempo real.
 
@@ -164,6 +181,7 @@ Permite actualizar los **costos por región** en tiempo real.
 ---
 
 ### 🧾 Gestión de Pedidos
+
 Listado de pedidos ordenados del **más reciente al más antiguo**, con buscador y paginación.  
 Incluye botón para acceder al **detalle del pedido**.
 
@@ -172,17 +190,20 @@ Incluye botón para acceder al **detalle del pedido**.
 ---
 
 ### 📦 Detalle de Pedido
+
 Visualiza toda la información del pedido: dirección, método de pago, resumen, cliente y estado.  
 Permite:
-- ❌ Cancelar pedido y devolver dinero.  
-- 🚚 Despachar pedido con seguimiento.  
-- 🔄 Actualizar estado de entrega.  
+
+- ❌ Cancelar pedido y devolver dinero.
+- 🚚 Despachar pedido con seguimiento.
+- 🔄 Actualizar estado de entrega.
 
 ![Detalle de pedido](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761610281/detalle-pedido_msehhu.png)
 
 ---
 
 ### 🗂️ Categorías
+
 Listado y gestión de categorías con subcategorías y productos asociados.  
 Si se desactiva una categoría, también se **desactivan todos sus productos**.  
 Incluye buscador y opción para crear nuevas categorías.
@@ -208,19 +229,21 @@ Cada característica se puede crear, editar o eliminar, y está asociada a una o
 
 - 📦 Las características se muestran dinámicamente al crear productos según la categoría seleccionada.
 
-![Categorías](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761616858/caracteristicas_h0dr25.png)
+![Características](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761616858/caracteristicas_h0dr25.png)
 
 ---
 
 ## 🧩 Tecnologías Principales
+
 **Frontend:** Angular, TypeScript, Bootstrap  
 **Backend:** Spring Boot, Java 17, JPA, MySQL  
 **Integraciones:** Mercado Pago, Cloudinary  
-**Infraestructura:** REST API, Swagger  
+**Infraestructura:** REST API, Swagger
 
 ---
 
 ## 👨‍💻 Autor
+
 **Desarrollado por [Abel Acevedo](https://github.com/abelacevedo)**  
 📍 Tortuguitas, Buenos Aires – Argentina  
 🚀 Apasionado por el desarrollo web, el aprendizaje continuo y los proyectos de alto impacto.
