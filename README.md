@@ -282,19 +282,156 @@ Cada slider puede contener hasta 8 imágenes, que se pueden subir, listar o elim
 
 ![Slider](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761618863/sliders_xigequ.png)
 
-<!-- ## 🧩 Tecnologías Principales
+---
 
-**Frontend:** Angular, TypeScript, Bootstrap  
-**Backend:** Spring Boot, Java 17, JPA, MySQL  
-**Integraciones:** Mercado Pago, Cloudinary  
-**Infraestructura:** REST API, Swagger
+### 🧩 Tecnologías Principales
+
+Este proyecto está desarrollado utilizando un stack moderno y completo para ofrecer una experiencia de usuario robusta y eficiente, tanto en frontend como en backend.
+
+⚡ Frontend
+
+- Angular 17: Framework principal para el desarrollo de la interfaz de usuario.
+
+- Angular Material: Librería de componentes UI para Angular.
+
+- HTML5 & CSS3 / Sass: Estructura y estilos modernos, incluyendo preprocesador Sass.
+
+- Bootstrap 5: Framework CSS para diseño responsivo y componentes predefinidos.
+
+⚡ Backend
+
+- Java 17: Lenguaje principal del backend.
+
+- Spring Boot: Framework para aplicaciones Java, incluyendo REST APIs.
+
+- Hibernate / JPA: Para manejo de persistencia y relaciones en la base de datos.
+
+- Maven: Gestión de dependencias y compilación del proyecto.
+
+⚡ Base de Datos y Cache
+
+- PostgreSQL: Base de datos relacional.
+
+- Redis Cache: Almacenamiento en caché para mejorar la performance.
+
+⚡ Integraciones y APIs
+
+- MercadoPago: Sistema de pagos integrado.
+
+- Google Maps Geocoding API: Para geolocalización y rutas.
+
+- Spring Security JWT: Autenticación y autorización mediante tokens JWT.
+
+⚡ Otras Herramientas
+
+- Maven / Spring Boot: Gestión de dependencias y desarrollo ágil.
+
+- Bootstrap 5: Diseño responsivo y componentes predefinidos.
+
+- Angular Material: UI consistente y personalizable.
 
 ---
 
-## 👨‍💻 Autor
+## 🏗️ Arquitectura y Buenas Prácticas
 
-**Desarrollado por [Abel Acevedo](https://github.com/abelacevedo)**  
-📍 Tortuguitas, Buenos Aires – Argentina  
-🚀 Apasionado por el desarrollo web, el aprendizaje continuo y los proyectos de alto impacto.
+Este proyecto aplica una arquitectura modular y buenas prácticas de ingeniería de software para garantizar mantenibilidad, escalabilidad y rendimiento. Se priorizó el **diseño orientado a objetos (POO)**, **principios SOLID**, **Clean Code** y patrones arquitectónicos probados para evitar cuellos de botella y facilitar el escalado.
 
---- -->
+### Principios y buenas prácticas aplicadas
+- **SOLID**: separación de responsabilidades, inversión de dependencias y diseño orientado a interfaces para facilitar testing y evolución.
+- **Clean Code**: nombres claros, funciones pequeñas, responsabilidades únicas y código fácilmente legible.
+- **DRY / KISS / YAGNI**: evitar duplicación, mantener soluciones simples y no sobrecomplicar con features innecesarias.
+- **Inyección de dependencias**: facilita el mocking en pruebas y desacopla componentes.
+- **Manejo de errores centralizado**: excepciones controladas y respuestas consistentes para el frontend.
+- **Seguridad**: uso de Spring Security + JWT para autenticación/autorization, validación y saneamiento de inputs.
+- **Pruebas**: diseño pensando en testabilidad (unitarias y de integración).
+- **Observabilidad**: logs estructurados y métricas para detectar cuellos de botella en producción.
+
+### Estrategias para evitar cuellos de botella y optimizar rendimiento
+- **Paginación y carga lazy** en APIs y frontend para evitar transferencias y renders pesados.
+- **Caching**: uso de Redis para cachear consultas frecuentes y reducir carga en la DB.
+- **Batching y procesamiento asíncrono** para tareas pesadas (envío de emails, procesamiento de imágenes, etc.).
+- **Pool de conexiones** (DB) y configuración óptima de HikariCP.
+- **Índices y optimización de consultas** en la base de datos (proyecciones DTO, consultas específicas y `SELECT` controlados).
+- **Limitación de concurrencia / optimistic locking** cuando corresponde para evitar inconsistencias en stock.
+
+### Arquitectura Backend (Java / Spring Boot)
+
+Estructura de paquetes principal utilizada:
+
+```text
+src/
+└── main/
+└── java/
+└── com.api.ecommerce
+├── config
+├── controller
+├── despertarrender
+├── dtos
+├── entity
+├── enums
+├── exception
+├── jwt
+├── mapper
+├── repository
+├── seeder
+├── serviceImpl
+├── specification
+└── util
+```
+
+Patrones y responsabilidades:
+- **Controller**: manejo de endpoints REST y validación inicial.
+- **DTOs / Mapper**: separación entre entidades y modelos expuestos (reduce overfetching).
+- **Repository (JPA/Hibernate)**: capa de persistencia con consultas optimizadas.
+- **Service / ServiceImpl**: lógica de negocio, transacciones y coordinación entre repositorios.
+- **Specification**: consultas dinámicas y filtros reutilizables.
+- **Exception**: manejo centralizado de errores.
+- **JWT / Security**: autenticación y autorización.
+- **Seeder**: datos iniciales para ambientes de desarrollo/testing.
+- **Util / Config**: configuración central, beans y utilidades.
+
+### Arquitectura Frontend (Angular)
+
+Estructura de módulos y carpetas sugerida (la que estás usando):
+
+```text
+src/
+└── app/
+├── core/ # Servicios singleton, interceptores, guards, modelos globales
+│ ├── services/
+│ ├── guards/
+│ ├── interceptors/
+│ ├── models/
+│ └── core.module.ts
+├── shared/ # Componentes, pipes, directivas reutilizables
+│ ├── components/
+│ ├── pipes/
+│ ├── directives/
+│ ├── services/
+│ └── shared.module.ts
+├── features/ # Módulos principales por dominio (lazy loaded)
+│ ├── auth/
+│ ├── admin/
+│ ├── cliente/
+│ ├── home/
+├── app-routing.module.ts # Routes con lazy loading por módulo
+└── app.component.ts
+```
+
+
+Buenas prácticas en frontend:
+- **Lazy loading** por módulos para mejorar tiempo de carga.
+- **Servicios singleton** en `core` para estado compartido (API clients, auth).
+- **Shared module** para componentes/pipes/directivas reutilizables.
+- **Interceptors** para manejo central de tokens, errores y tiempo de requests.
+- **OnPush change detection** y `trackBy` en listas para optimizar rendering.
+- **RxJS**: manejo correcto de suscripciones (unsubscribe, takeUntil) y uso de streams para UI reactiva.
+- **AOT, tree-shaking y optimización de bundles** para producción.
+- **Accesibilidad y responsive** con Angular Material y Bootstrap.
+- **Validaciones front y back**: validación en formularios y revalidación en backend.
+
+### Resultado esperado
+La combinación de esta arquitectura modular, los principios SOLID y las prácticas de rendimiento te permiten tener:
+- Código **más mantenible y testeable**.
+- **Escalado horizontal y vertical** más sencillo.
+- Menor probabilidad de **cuellos de botella** y mejor experiencia de usuario.
