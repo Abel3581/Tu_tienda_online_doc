@@ -28,6 +28,7 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
   - [Características de Productos](#características-de-productos)
+  - [🗂️ Subcategorías de Productos](#-subcategorías-de-productos)
 
 
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
@@ -235,7 +236,28 @@ Cada característica se puede crear, editar o eliminar, y está asociada a una o
 
 ---
 
-## 🧩 Tecnologías Principales
+### 🗂️ Subcategorías de Productos
+
+Esta sección permite crear y listar subcategorías asociadas a las categorías existentes en el ecommerce.
+Las subcategorías se pueden crear, editar o eliminar, y están vinculadas a una categoría principal.
+
+✨ Funcionalidades principales
+
+- 🆕 Crear nuevas subcategorías: asigna un nombre y selecciona la categoría principal a la que pertenecerá.
+
+- ✏️ Editar subcategorías existentes: modificar el nombre.
+
+- 🗑️ Eliminar subcategorías que ya no sean necesarias.
+
+- 🔍 Listado completo: ver todas las subcategorías registradas, con su ID, nombre y categoría asociada.
+
+- 📄 Paginación: navegar fácilmente por grandes cantidades de subcategorías.
+
+- 📦 Las subcategorías disponibles se muestran dinámicamente al crear productos para mantener la consistencia del catálogo.
+
+![Características](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761618127/subcategorias_d5hdfb.png)
+
+<!-- ## 🧩 Tecnologías Principales
 
 **Frontend:** Angular, TypeScript, Bootstrap  
 **Backend:** Spring Boot, Java 17, JPA, MySQL  
@@ -250,4 +272,4 @@ Cada característica se puede crear, editar o eliminar, y está asociada a una o
 📍 Tortuguitas, Buenos Aires – Argentina  
 🚀 Apasionado por el desarrollo web, el aprendizaje continuo y los proyectos de alto impacto.
 
----
+--- -->
