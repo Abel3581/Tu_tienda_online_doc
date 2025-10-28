@@ -29,6 +29,8 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🗂️ Categorías](#️-categorías)
   - [Características de Productos](#características-de-productos)
   - [Subcategorías de Productos](#subcategorías-de-productos)
+  - [🖼️ Slider Principal de la Página de Inicio](#-slider-principal-de-la-página-de-inicio)
+
 
 
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
@@ -256,6 +258,29 @@ Las subcategorías se pueden crear, editar o eliminar, y están vinculadas a una
 - 📦 Las subcategorías disponibles se muestran dinámicamente al crear productos para mantener la consistencia del catálogo.
 
 ![Subcategorías](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761618127/subcategorias_d5hdfb.png)
+
+---
+
+🖼️ Slider Principal de la Página de Inicio
+
+Esta sección permite administrar las imágenes de los sliders principales que se muestra en la página de inicio del ecommerce.
+Cada slider puede contener hasta 8 imágenes, que se pueden subir, listar o eliminar según se requiera.
+
+✨ Funcionalidades principales
+
+- 🆕 Subir imágenes: agrega nuevas imágenes al slider, respetando la resolución recomendada (1283x352 px, aceptando entre 1080x290 px y 1283x400 px).
+
+- 🗂️ Seleccionar slider: permite elegir entre distintos sliders configurables en el sistema.
+
+- 🗑️ Eliminar imágenes: elimina una imagen específica del slider.
+
+- 🔄 Vaciar slider: borra todas las imágenes de un slider para comenzar de nuevo.
+
+- 📄 Listado de imágenes: visualiza todas las imágenes subidas, con detalles de nombre, tipo y resolución.
+
+- ⚠️ Validación de límite: el sistema no permite subir más de 8 imágenes por slider.
+
+![Slider](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761618863/sliders_xigequ.png)
 
 <!-- ## 🧩 Tecnologías Principales
 
