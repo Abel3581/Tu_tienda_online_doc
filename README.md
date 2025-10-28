@@ -28,7 +28,7 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
   - [Características de Productos](#características-de-productos)
-  - [🗂️ Subcategorías de Productos](#-subcategorías-de-productos)
+  - [🗂️ Subcategorías de Productos](#subcategorías-de-productos)
 
 
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
@@ -255,7 +255,7 @@ Las subcategorías se pueden crear, editar o eliminar, y están vinculadas a una
 
 - 📦 Las subcategorías disponibles se muestran dinámicamente al crear productos para mantener la consistencia del catálogo.
 
-![Características](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761618127/subcategorias_d5hdfb.png)
+![Subcategorías](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761618127/subcategorias_d5hdfb.png)
 
 <!-- ## 🧩 Tecnologías Principales
 
