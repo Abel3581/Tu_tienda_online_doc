@@ -27,7 +27,8 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🧾 Gestión de Pedidos](#-gestión-de-pedidos)
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
-  - [⚙️ Características de Productos](#-características-de-productos)
+  - [⚙️ Características de Productos](#características-de-productos)
+
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
 - [👨‍💻 Autor](#-autor)
 
