@@ -1,280 +1,206 @@
-# Tu Tienda Online - Documentación
+# 🛍️ Tu Tienda Online
 
-Documentación visual de la tienda online (Angular + Spring Boot).
+**Plataforma desarrollada con Angular + Spring Boot**  
+Documentación visual y funcional del sistema dividida por roles: **Cliente** y **Administrador**.
 
-# 🙍‍♂️ Rol Cliente
+---
 
-## 🏠 Inicio
+## 📑 Índice
 
-En esta sección se presentan los productos destacados junto con dos sliders totalmente configurables desde el panel de administración.  
-El buscador principal permite filtrar los productos por **nombre, categoría, subcategoría, características, marcas** y otros criterios, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.
+- [🙍‍♂️ Rol Cliente](#-rol-cliente)
+  - [🏠 Inicio](#-inicio)
+  - [🧾 Detalle del Producto](#-detalle-del-producto)
+  - [🔎 Búsqueda de Productos](#-búsqueda-de-productos)
+  - [🛒 Carrito de Compras](#-carrito-de-compras)
+  - [💳 Checkout](#-checkout)
+  - [✅ Confirmación de Pago y Creación del Pedido](#-confirmación-de-pago-y-creación-del-pedido)
+  - [💰 Modal y Respuesta de Compra](#-modal-y-respuesta-de-compra)
+- [⚙️ Rol Administrador](#️-rol-administrador)
+  - [📊 Dashboard](#-dashboard)
+  - [👥 Gestión de Clientes](#-gestión-de-clientes)
+  - [🛍️ Productos Comunes](#️-productos-comunes)
+  - [🌟 Productos Destacados](#-productos-destacados)
+  - [📦 Carga Masiva de Productos](#-carga-masiva-de-productos)
+  - [🚚 Logística – Métodos de Envío](#-logística--métodos-de-envío)
+  - [💰 Compra Mínima del Carrito](#-compra-mínima-del-carrito)
+  - [🚛 Zonas de Envío](#-zonas-de-envío)
+  - [🧾 Gestión de Pedidos](#-gestión-de-pedidos)
+  - [📦 Detalle de Pedido](#-detalle-de-pedido)
+  - [🗂️ Categorías](#️-categorías)
+- [🧩 Tecnologías Principales](#-tecnologías-principales)
+- [👨‍💻 Autor](#-autor)
 
-![Página de inicio](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580413/home_ojsacs.png)
+---
 
-## 🧾 Detalle del Producto
+## 🙍‍♂️ Rol Cliente
 
-En esta sección se muestra la información completa del producto seleccionado, incluyendo su **imagen, nombre, categoría, código, peso y precio actual**, así como sus características.  
-Si el artículo cuenta con un descuento, se visualiza el **precio original tachado** junto con el **porcentaje de ahorro** correspondiente.
+### 🏠 Inicio
+En esta sección se presentan los **productos destacados** junto con dos *sliders* configurables desde el panel de administración.  
+El **buscador principal** permite filtrar productos por **nombre, categoría, subcategoría, características o marca**, ofreciendo una experiencia de búsqueda **dinámica y personalizada**.
 
-El usuario puede **agregar el producto al carrito**, seleccionar la cantidad deseada y calcular el **costo del envío** directamente desde esta vista.  
-Debajo, se presentan los **productos relacionados**, que se actualizan dinámicamente según la subcategoría o similitud del producto, permitiendo una **navegación fluida** entre artículos similares o complementarios.
+![Inicio](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580413/home_ojsacs.png)
 
-Además, la interfaz mantiene elementos clave de navegación como la **barra superior con el buscador**, las **opciones de cuenta** y el **acceso rápido al carrito**, brindando una experiencia de usuario coherente e intuitiva en todo el sitio.
+---
+
+### 🧾 Detalle del Producto
+Muestra toda la información del producto: **imagen, nombre, categoría, peso, precio y características**.  
+Si tiene descuento, se muestra el **precio original tachado** y el **porcentaje de ahorro**.  
+Incluye botón para **agregar al carrito**, calcular el **costo de envío** y ver **productos relacionados**.
 
 ![Detalle del producto](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761580886/detalle_dn6fcb.png)
 
-## 🛍️ Sección de Búsqueda de Productos
+---
 
-En esta vista se muestran los **productos filtrados** según la búsqueda realizada.  
-En la columna izquierda se listan las **coincidencias por marcas, categorías** y **productos con promociones**, destacando los descuentos según el porcentaje aplicado.
+### 🔎 Búsqueda de Productos
+Listado filtrado según la búsqueda del usuario.  
+Incluye **filtros por marca, categoría y promociones**, además de ordenamiento por precio o nombre.
 
-Además, se incluye un **menú desplegable** que permite ordenar los productos por **precio** (mayor a menor o menor a mayor) y alfabéticamente (**de la A a la Z**).
-
-![Filtro](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761582932/busqueda-productos_vvvcpp.png)
-
-
-## 🛒 Carrito de Compras
-
-En esta sección se listan todos los productos seleccionados por el usuario, mostrando su **imagen, nombre, precio actual, precio anterior en caso de descuento** y controles para **modificar la cantidad o eliminar artículos**.  
-E carrito realiza una **validación dinámica del stock disponible** para evitar agregar productos que superen la cantidad permitida.
-
-También se muestra el **total de la compra** actualizado en tiempo real y un botón para continuar con el proceso de pago.  
-La **dirección de envío** se obtiene automáticamente según la ubicación configurada por el usuario, permitiendo calcular costos de entrega antes de confirmar la compra.
-
-El sistema valida además un **importe mínimo de compra** que debe alcanzarse para habilitar la opción de finalizar el pedido.  
-Se maneja la **concurrencia** para garantizar la consistencia de los datos en caso de múltiples usuarios realizando operaciones simultáneas, asegurando que los precios y cantidades se mantengan actualizados correctamente.
-
-![Carrito de compras](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761606062/carrito-compras_tutk7f.png)
-
-## 🛒 Vista de Checkout / Carrito de Compras
-
-En esta vista el usuario puede revisar los productos agregados al carrito, modificar cantidades, eliminar ítems y visualizar el resumen completo de su compra.
-
-🔹 Funcionalidades principales
-
-Listado de productos agrupados por categoría, mostrando imagen, nombre, precio actual y precio anterior cuando aplica un descuento.
-
-Controles de cantidad (+ / -) y botón de eliminación individual.
-
-Cálculo automático de subtotales y totales según las cantidades seleccionadas.
-
-Sección de políticas de reemplazo ante falta de stock, con tres opciones:
-
-Contactarme para reemplazo.
-
-No reemplazar producto.
-
-Utilizar criterio del vendedor.
-
-Resumen lateral de compra con subtotal, costo de envío, descuentos aplicados y total final.
-
-Botón de confirmación de compra habilitado solo cuando se cumplen las condiciones del pedido.
-
-![Carrito de compras](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761584331/checkout_bf25ju.png)
-
-## ✅ Confirmación de Pago y Creación del Pedido
-
-Una vez que el pago es aprobado a través de Mercado Pago, el sistema ejecuta automáticamente un flujo completo de confirmación y actualización, garantizando la coherencia de datos entre el frontend, backend y servicios externos.
-
-🔹 Flujo automatizado con Webhook
-
-Recepción del webhook de Mercado Pago: el backend escucha la confirmación del pago mediante un endpoint seguro configurado en Spring Boot.
-
-Validación del estado del pago: se comprueba que la transacción haya sido efectivamente aprobada antes de continuar el proceso.
-
-Actualización de stock: se descuentan las unidades correspondientes de cada producto adquirido para mantener la integridad del inventario.
-
-Creación del pedido: se registra un nuevo pedido en la base de datos con detalle de productos, totales, usuario, dirección y método de pago.
-
-Envío automático de email al cliente confirmando la compra, incluyendo resumen de los productos, monto total y datos de entrega.
-
-Notificación interna a la aplicación (por ejemplo, para panel del vendedor o dashboard administrativo) informando que se generó un nuevo pedido.
-
-![Finalizacion de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761585397/finalizar-compra_ethaym.png)
-
-## ✅ Modal Crear compra
-
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png)
+![Búsqueda](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761582932/busqueda-productos_vvvcpp.png)
 
 ---
 
-## ✅ Respuesta compra
+### 🛒 Carrito de Compras
+Muestra los productos seleccionados con control de cantidad, **validación de stock** y **actualización en tiempo real** del total.  
+Incluye un **importe mínimo requerido** antes de finalizar la compra y manejo de **concurrencia** entre usuarios.
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/compra-exito_q3i0br.png)
-
+![Carrito](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761606062/carrito-compras_tutk7f.png)
 
 ---
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png)
+### 💳 Checkout
+Permite revisar, modificar y confirmar los productos antes de pagar.  
+Cuenta con:
+- Subtotales, descuentos y totales automáticos.  
+- Botones de modificación (+ / -).  
+- Validación del stock.  
+- Políticas de reemplazo por falta de productos.  
 
+![Checkout](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761584331/checkout_bf25ju.png)
 
+---
 
-# 🙍‍♂️ Rol Administrador
+### ✅ Confirmación de Pago y Creación del Pedido
+Flujo automatizado con **Mercado Pago** y actualización por **Webhook**:
+1. Se recibe el webhook de Mercado Pago.  
+2. Se valida el estado del pago.  
+3. Se actualiza el stock.  
+4. Se genera el pedido y se envía correo de confirmación.  
 
-## 📊 Vista Dashboard
+![Confirmación](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761585397/finalizar-compra_ethaym.png)
 
-Funcionalidades principales:
+---
 
-📦 Visualización del total de productos registrados en la tienda.
+### 💰 Modal y Respuesta de Compra
+Visualización del proceso de pago y respuesta de compra exitosa.
 
-💰 Consulta de las ventas del día y el total acumulado de ventas globales.
+![Modal](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png)
+![Compra exitosa](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/compra-exito_q3i0br.png)
+![Respuesta](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png)
 
-🖼️ Posibilidad de agregar o modificar la imagen de la marca que se muestra en la aplicación.
+---
 
-🗓️ Registro y visualización de la fecha de inicio de actividades del comercio o empresa.
+## ⚙️ Rol Administrador
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761595326/dashboard_d2oves.png)
+### 📊 Dashboard
+Visualiza métricas del ecommerce: productos registrados, ventas del día y globales.  
+Permite configurar imagen de marca y fecha de inicio del comercio.
 
-## 👥 Vista de Clientes
+![Dashboard](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761595326/dashboard_d2oves.png)
 
-En esta sección se listan todos los clientes registrados en el eCommerce.
+---
 
-📄 Los resultados se muestran mediante paginación, permitiendo una navegación ordenada entre los registros.
+### 👥 Gestión de Clientes
+Listado de clientes con **buscador avanzado** y **paginación**.
 
-🔍 Incluye un filtro de búsqueda que facilita encontrar clientes por nombre, correo u otros criterios relevantes
+![Clientes](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761596604/usuarios_r6eufh.png)
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761596604/usuarios_r6eufh.png)
+---
 
-## 🛍️ Vista de Listar Productos Comunes
+### 🛍️ Productos Comunes
+Permite **listar, editar, crear y desactivar productos**.  
+Incluye carga de hasta 3 imágenes, cálculo automático de descuentos y etiquetado de ofertas.
 
-En esta sección se gestionan los productos disponibles en el eCommerce.
+![Productos comunes](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597648/listar-productos-comunes_t8tyaz.png)
 
-📦 Permite listar todos los productos registrados en el sistema.
+---
 
-✏️ Opción para actualizar información de cada producto.
+### 🌟 Productos Destacados
+Gestiona los productos visibles en la **página principal**.  
+Permite activar, editar o eliminar artículos destacados.
 
-🚫 Posibilidad de desactivar productos temporalmente sin eliminarlos.
+![Destacados](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761598805/listar-productos-destacados_hph5dz.png)
 
-📄 Incluye paginación para una navegación ordenada.
+---
 
-🔍 Dispone de un filtro de búsqueda para encontrar productos fácilmente.
+### 📦 Carga Masiva de Productos
+Permite importar productos mediante **archivos .csv** e imágenes **.zip**, optimizando la gestión masiva del catálogo.
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597648/listar-productos-comunes_t8tyaz.png)
+![Carga masiva](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761605460/carga-masiva_bcd23e.png)
 
+---
 
-## 🛍️ Vista de Creación de Productos Comunes
+### 🚚 Logística – Métodos de Envío
+Panel para administrar los métodos de envío: propio o tercerizado.  
+Permite modificar **plazos, disponibilidad y costos**.
 
-En esta sección se pueden crear nuevos productos ingresando toda la información necesaria desde un formulario intuitivo.
+![Logística](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761606756/logistica-listar_jmnyrz.png)
 
-Características principales:
+---
 
-📝 Permite registrar productos normales seleccionando sus datos correspondientes (nombre, categoría, precio, descripción, etc.).
+### 💰 Compra Mínima del Carrito
+Define el **monto mínimo requerido** para finalizar una compra, garantizando un valor base en el carrito.
 
-🏷️ Si se marca la opción “En promoción”, el producto mostrará un badge promocional y el sistema calculará automáticamente el porcentaje de descuento.
+![Compra mínima](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761607877/compra-minima_d87rcu.png)
 
-💥 En caso de seleccionar “En oferta” o “Ofertas semanales”, se asigna el badge de oferta y también se calcula automáticamente el porcentaje de descuento.
+---
 
-🖼️ Es posible agregar hasta tres imágenes por producto, eligiendo cuál será la imagen principal que se mostrará en la tienda.
+### 🚛 Zonas de Envío
+Consulta y gestión de **zonas de envío** con cobertura en **toda Argentina**.  
+Permite actualizar los **costos por región** en tiempo real.
 
-⚙️ Todo el proceso sigue instrucciones claras para garantizar la correcta carga del producto.
+![Zonas de envío](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761608464/zonas-envio_fgul2f.png)
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761597960/crear-producto-normal_jgsvwl.png)
+---
 
+### 🧾 Gestión de Pedidos
+Listado de pedidos ordenados del **más reciente al más antiguo**, con buscador y paginación.  
+Incluye botón para acceder al **detalle del pedido**.
 
-## 🛍️ Vista de Listar de Productos destacados q se muestran en inicio
+![Pedidos](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761609876/listar-pedidos_kx8kst.png)
 
-En esta sección se gestionan los productos de la vista home en el eCommerce.
+---
 
-📦 Permite listar todos los productos destacados del sistema 32 por seccion .
+### 📦 Detalle de Pedido
+Visualiza toda la información del pedido: dirección, método de pago, resumen, cliente y estado.  
+Permite:
+- ❌ Cancelar pedido y devolver dinero.  
+- 🚚 Despachar pedido con seguimiento.  
+- 🔄 Actualizar estado de entrega.  
 
-✏️ Opción para actualizar información de cada producto, si en la columna seccion se elige normal se quita de destacados.
+![Detalle de pedido](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761610281/detalle-pedido_msehhu.png)
 
-🚫 Posibilidad de desactivar productos temporalmente sin eliminarlos.
+---
 
-📄 Incluye paginación para una navegación ordenada.
+### 🗂️ Categorías
+Listado y gestión de categorías con subcategorías y productos asociados.  
+Si se desactiva una categoría, también se **desactivan todos sus productos**.  
+Incluye buscador y opción para crear nuevas categorías.
 
-🔍 Dispone de un filtro de búsqueda para encontrar productos fácilmente.
+![Categorías](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761610627/categorias_w7hjy0.png)
 
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761598805/listar-productos-destacados_hph5dz.png)
+---
 
-## 🌟 Vista de Creación de Productos Destacados
+## 🧩 Tecnologías Principales
+**Frontend:** Angular, TypeScript, Bootstrap  
+**Backend:** Spring Boot, Java 17, JPA, MySQL  
+**Integraciones:** Mercado Pago, Cloudinary  
+**Infraestructura:** REST API, Swagger  
 
-En esta sección se pueden crear productos destacados completando un formulario intuitivo con toda la información necesaria.
-Estos productos se muestran en la página de inicio del cliente (Home), pudiendo crear hasta 32 productos destacados por sección.
+---
 
-Características principales:
+## 👨‍💻 Autor
+**Desarrollado por [Abel Acevedo](https://github.com/abelacevedo)**  
+📍 Tortuguitas, Buenos Aires – Argentina  
+🚀 Apasionado por el desarrollo web, el aprendizaje continuo y los proyectos de alto impacto.
 
-📝 Permite registrar productos destacados ingresando sus datos principales como nombre, categoría, precio y descripción.
-
-🏷️ Al marcar la opción “En promoción”, el producto mostrará un badge promocional y el sistema calculará automáticamente el porcentaje de descuento.
-
-💥 Si se selecciona “En oferta” o “Ofertas semanales”, se asignará el badge de oferta, junto con el cálculo automático del porcentaje de descuento.
-
-🖼️ Posibilidad de agregar hasta tres imágenes por producto, con la opción de definir cuál será la imagen principal visible en la tienda.
-
-⚙️ El proceso cuenta con instrucciones guiadas para asegurar la carga correcta de cada producto.
-
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761604291/crear-producto-destacado_cyt5fe.png)
-
-## 📦 Instrucciones para la Carga Masiva de Productos
-
-Esta sección permite importar múltiples productos de forma simultánea mediante un archivo .csv y un .zip con las imágenes correspondientes.
-Seguí estos pasos cuidadosamente para garantizar una carga exitosa.
-
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761604742/inst-carga-masiva_v7hqmz.png)
-
-## 📦 Carga Masiva de Productos
-
-![Modal de compra](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761605460/carga-masiva_bcd23e.png)
-<!-- 
-🧱 Arquitectura del Proyecto
-
-El backend está implementado siguiendo una arquitectura en capas (Layered Architecture), una práctica estándar en el desarrollo empresarial con Spring Boot.
-Esta estructura organiza el código de manera clara, promoviendo la separación de responsabilidades, la mantenibilidad y la escalabilidad.
-
-🔹 Capas principales:
-
-Controller (Web Layer): expone los endpoints REST y gestiona las solicitudes HTTP.
-
-Service (Business Layer): contiene la lógica de negocio y las reglas de aplicación.
-
-Repository (Data Access Layer): se encarga de la comunicación con la base de datos utilizando Spring Data JPA.
-
-Model / Entity Layer: define las entidades, DTOs y modelos de datos.
-
-📌 Esta organización se basa en el patrón MVC extendido (Model–View–Controller), garantizando un flujo claro desde la capa de presentación hasta la persistencia de datos.
-
-🟦 Frontend – Angular
-
-El frontend se desarrolla bajo una arquitectura modular basada en features (Feature-Based Modular Architecture), complementada con principios de Clean Architecture y el patrón Core–Shared–Feature.
-Esta estructura está pensada para proyectos escalables y de fácil mantenimiento.
-
-
-```text
-src/
- ├── app/
- │    ├── core/                  # Servicios singleton, interceptores, guards, modelos globales
- │    │    ├── services/
- │    │    ├── guards/
- │    │    ├── interceptors/
- │    │    ├── models/
- │    │    └── core.module.ts
- │    │
- │    ├── shared/                # Componentes, pipes, directivas reutilizables
- │    │    ├── components/
- │    │    ├── pipes/
- │    │    ├── directives/
- │    │    └── shared.module.ts
- │    │
- │    ├── features/              # Módulos principales divididos por función/feature
- │    │    ├── auth/             # Login, registro, recuperación de contraseña
- │    │    │     ├── components/
- │    │    │     ├── services/
- │    │    │     └── auth.module.ts
- │    │    │
- │    │    ├── admin/            # Dashboard, gestión de productos, usuarios, pedidos (solo admin)
- │    │    │     ├── components/
- │    │    │     ├── services/
- │    │    │     └── admin.module.ts
- │    │    │
- │    │    ├── cliente/          # Catálogo, carrito, perfil, historial de pedidos
- │    │    │     ├── components/
- │    │    │     ├── services/
- │    │    │     └── cliente.module.ts
- │    │    │
- │    │    ├── shared-features/  # Funcionalidades compartidas como catálogo de productos
- │    │
- │    ├── app-routing.module.ts # Rutas principales con lazy loading por módulo
- │    └── app.component.ts
- │
- └── assets/                     # Imágenes, estilos globales, fuentes -->
+---
