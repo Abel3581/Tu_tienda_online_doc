@@ -27,7 +27,8 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🧾 Gestión de Pedidos](#-gestión-de-pedidos)
   - [📦 Detalle de Pedido](#-detalle-de-pedido)
   - [🗂️ Categorías](#️-categorías)
-  - [⚙️ Características de Productos](#características-de-productos)
+  - [Características de Productos](#características-de-productos)
+
 
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
 - [👨‍💻 Autor](#-autor)
@@ -213,7 +214,7 @@ Incluye buscador y opción para crear nuevas categorías.
 
 ---
 
-### ⚙️ Características de Productos
+### Características de Productos
 
 Esta sección permite gestionar las **características** de los productos que se muestran en el **detalle** de cada artículo.
 Cada característica se puede crear, editar o eliminar, y está asociada a una o varias categorías.
