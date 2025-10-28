@@ -2,6 +2,34 @@
 
 **Plataforma desarrollada con Angular + Spring Boot**  
 Documentación visual y funcional del sistema dividida por roles: **Cliente** y **Administrador**.
+🧩 Credenciales para Probar la Aplicación
+
+Puedes acceder a la aplicación utilizando los siguientes usuarios de prueba según el rol:
+
+👤 Rol Cliente
+
+- Email: cliente_test@gmail.com
+
+- Contraseña: 12345678
+
+🛠️ Rol Administrador
+
+- Email: admin@gmail.com
+
+- Contraseña: admin123
+
+💳 Datos de Prueba para Mercado Pago
+
+Para realizar una compra de prueba, debes iniciar sesión en modo privado/incógnito y utilizar el siguiente comprador de prueba:
+
+- Usuario comprador: TETE9700722
+
+- Contraseña: Y8in2kBZCV
+
+💡 Nota:
+La aplicación está desplegada en Render (backend) y Vercel (frontend), en servicios gratis por lo que anda media lenta.
+
+💰 Precio del código: $50.000
 
 ---
 
@@ -36,10 +64,8 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [Subcategorías de Productos](#subcategorías-de-productos)
   - [Slider Principal de la Página de Inicio](#slider-principal-de-la-página-de-inicio)
 
-
-
 - [🧩 Tecnologías Principales](#-tecnologías-principales)
-- [👨‍💻 Autor](#-autor)
+
 
 ---
 
