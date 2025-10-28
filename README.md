@@ -29,7 +29,7 @@ Documentación visual y funcional del sistema dividida por roles: **Cliente** y 
   - [🗂️ Categorías](#️-categorías)
   - [Características de Productos](#características-de-productos)
   - [Subcategorías de Productos](#subcategorías-de-productos)
-  - [🖼️ Slider Principal de la Página de Inicio](#-slider-principal-de-la-página-de-inicio)
+  - [Slider Principal de la Página de Inicio](#slider-principal-de-la-página-de-inicio)
 
 
 
