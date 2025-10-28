@@ -428,6 +428,9 @@ Este proyecto aplica una arquitectura modular y buenas prácticas de ingeniería
 - **Limitación de concurrencia / optimistic locking** cuando corresponde para evitar inconsistencias en stock.
 
 ### Arquitectura Backend (Java / Spring Boot)
+📚 Patrón general:
+
+- Layered Architecture con inspiración en Domain-Driven Design
 
 Estructura de paquetes principal utilizada:
 
@@ -464,6 +467,9 @@ Patrones y responsabilidades:
 - **Util / Config**: configuración central, beans y utilidades.
 
 ### Arquitectura Frontend (Angular)
+📚 Patrón general:
+
+- Feature-Based Modular Architecture con Core y Shared Modules.
 
 Estructura de módulos y carpetas sugerida (la que estás usando):
 
