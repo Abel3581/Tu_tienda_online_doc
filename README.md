@@ -423,14 +423,6 @@ Este proyecto está desarrollado utilizando un stack moderno y completo para ofr
 
 - Spring Security JWT: Autenticación y autorización mediante tokens JWT.
 
-⚡ Otras Herramientas
-
-- Maven / Spring Boot: Gestión de dependencias y desarrollo ágil.
-
-- Bootstrap 5: Diseño responsivo y componentes predefinidos.
-
-- Angular Material: UI consistente y personalizable.
-
 ---
 
 ## 🏗️ Arquitectura y Buenas Prácticas
@@ -499,7 +491,7 @@ Patrones y responsabilidades:
 
 - Feature-Based Modular Architecture con Core y Shared Modules.
 
-Estructura de módulos y carpetas sugerida (la que estás usando):
+Estructura de módulos y carpetas:
 
 ```text
 src/
