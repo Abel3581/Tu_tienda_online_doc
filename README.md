@@ -31,7 +31,7 @@ Para realizar una compra de prueba, debes iniciar sesión en modo privado/incóg
 💡 Nota:
 La aplicación está desplegada en Render (backend) y Vercel (frontend), en servicios gratis por lo que anda media lenta.
 
-💰 Precio del código: $50.000
+💰 Precio del código: $5000
 
 ---
 
