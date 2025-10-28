@@ -1,8 +1,10 @@
 # 🛍️ Tu Tienda Online
 
-**Plataforma desarrollada con Angular + Spring Boot**  
+**Plataforma desarrollada con Angular + Spring Boot**.
+
 Documentación visual y funcional del sistema dividida por roles: **Cliente** y **Administrador**.
-🧩 Credenciales para Probar la Aplicación
+
+🧩 Credenciales para Probar la Aplicación:
 
 Puedes acceder a la aplicación utilizando los siguientes usuarios de prueba según el rol:
 
