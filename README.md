@@ -209,9 +209,16 @@ Flujo automatizado con **Mercado Pago** y actualización por **Webhook**:
 
 Visualización del proceso de pago y respuesta de compra exitosa.
 
-![Modal](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png)
+<img src="https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png" width="450">
+<img src="https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/compra-exito_q3i0br.png" width="450">
+
+<p align="center">
+  <img src="https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png" width="800">
+</p>
+
+<!-- ![Modal](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/modal-mercado-pago_boxtdz.png)
 ![Compra exitosa](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587490/compra-exito_q3i0br.png)
-![Respuesta](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png)
+![Respuesta](https://res.cloudinary.com/dlv9gwnw3/image/upload/v1761587492/respuesta-compra_gjowxh.png) -->
 
 ---
 
