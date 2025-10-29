@@ -16,9 +16,9 @@ Puedes acceder a la aplicación utilizando los siguientes usuarios de prueba seg
 
 🛠️ Rol Administrador
 
-- Email: admin@gmail.com
+- Email: -
 
-- Contraseña: admin123
+- Contraseña: -
 
 💳 Datos de Prueba para Mercado Pago
 
