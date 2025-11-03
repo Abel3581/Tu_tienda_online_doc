@@ -10,9 +10,9 @@ Puedes acceder a la aplicación utilizando los siguientes usuarios de prueba seg
 
 👤 Rol Cliente
 
-- Email: cliente_test@gmail.com
+- Email: 
 
-- Contraseña: 12345678
+- Contraseña: 
 
 🛠️ Rol Administrador
 
